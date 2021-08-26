@@ -12,6 +12,7 @@ import {
     createIcon,
     IconProps,
     useColorModeValue,
+    Link,
   } from '@chakra-ui/react';
   
   export default function Home() {
@@ -60,8 +61,10 @@ import {
                 px={6}
                 colorScheme={'red'}
                 bg='linear-gradient(225deg, rgb(120, 216, 255) 0%, rgb(76, 224, 150) 100%)'
-                _hover={{ bg: 'red.500' }}>
-                Dowload Now
+                _hover={{ bg: 'rgb(120, 216, 255)' }}>
+                <Link href='https://github.com/oitowork/rai-chrome-extesion#installing-and-running'>
+                Download Now
+                  </Link>
               </Button>
               <Button
                 rounded={'full'}

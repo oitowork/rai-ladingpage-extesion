@@ -9,6 +9,7 @@ import {
   Grid,
   theme,
   Heading,
+  useColorModeValue,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import logoReflexer from'./assets/brand-white.svg'
@@ -18,7 +19,6 @@ import Home  from './components/home'
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    
     <Box textAlign="center" fontSize="xl">
       <Grid minH="100vh" p={3} >
         <ColorModeSwitcher justifySelf="flex-end" />
@@ -51,7 +51,7 @@ export const App = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Heading as="h4" size="md">Oito.work</Heading>
+            <Heading color={useColorModeValue('purple.500', 'white')} as="h4" size="md">Oito.work</Heading>
           </Link>
           
           </HStack>
