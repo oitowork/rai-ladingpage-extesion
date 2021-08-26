@@ -4,34 +4,57 @@ import {
   Box,
   Text,
   Link,
-  VStack,
+  HStack,
   Code,
   Grid,
   theme,
+  Heading,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Logo } from "./Logo"
+import logoReflexer from'./assets/brand-white.svg'
+import gitcoin from'./assets/gitcoin-brand.svg'
+
+import Home  from './components/home'
 
 export const App = () => (
   <ChakraProvider theme={theme}>
+    
     <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
+      <Grid minH="100vh" p={3} >
         <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
+        <Home />
+        <HStack justifySelf="center">
+        <Link
+            color="purple.500"
+            href="https://gitcoin.co"
+            fontSize="2xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={gitcoin} alt="gitcoin.co" /> 
+          </Link>
+          </HStack>
+        <HStack spacing={12} justifySelf="center">
           <Link
-            color="teal.500"
+            color="teal.600"
             href="https://chakra-ui.com"
             fontSize="2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn Chakra
+            <img src={logoReflexer} alt="reflexer.finance" />
           </Link>
-        </VStack>
+          <Link
+            color="purple.500"
+            href="https://oito.work"
+            fontSize="2xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Heading as="h4" size="md">Oito.work</Heading>
+          </Link>
+          
+          </HStack>
       </Grid>
     </Box>
   </ChakraProvider>

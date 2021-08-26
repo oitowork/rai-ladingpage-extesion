@@ -1,6 +1,7 @@
 {
-  "name": "landing-page",
-  "version": "0.1.0",
+  "name": "landing-page-rai-extension",
+  "version": "1.0.0",
+  "author": "oito.work",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.0.0",
