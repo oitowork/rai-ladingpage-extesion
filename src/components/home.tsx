@@ -54,18 +54,19 @@ import {
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <Button
-                rounded={'full'}
-                size={'lg'}
-                fontWeight={'normal'}
-                px={6}
-                colorScheme={'red'}
-                bg='linear-gradient(225deg, rgb(120, 216, 255) 0%, rgb(76, 224, 150) 100%)'
-                _hover={{ bg: 'rgb(120, 216, 255)' }}>
-                <Link href='https://github.com/oitowork/rai-chrome-extesion#installing-and-running'>
-                Download Now
-                  </Link>
-              </Button>
+              <Link href='https://github.com/oitowork/rai-chrome-extesion#installing-and-running'>
+                <Button
+                  rounded={'full'}
+                  size={'lg'}
+                  fontWeight={'normal'}
+                  px={6}
+                  colorScheme={'red'}
+                  bg='linear-gradient(225deg, rgb(120, 216, 255) 0%, rgb(76, 224, 150) 100%)'
+                  _hover={{ bg: 'rgb(120, 216, 255)' }}
+                  variant='link'>
+                  Download Now
+                </Button>
+              </Link>
               <Button
                 rounded={'full'}
                 size={'lg'}
